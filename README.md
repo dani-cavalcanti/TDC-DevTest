@@ -83,7 +83,7 @@ If the Node.js version and npm are correctly installed, you’ll see the version
 ***For Mac and Linux installation visit:* https://kinsta.com/blog/how-to-install-node-js/**
 #
 
-### Running Application
+### Running Application :four_leaf_clover:
 With our database and Node installed and configured, now let's install the necessary packages and run the application. In your IDE's terminal, run the script below:
 
 * **To install project dependencies:**
@@ -112,7 +112,7 @@ And in browser:
 This project has to objective to teach about API Test Automation using the Robot Framework. We'll testing two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
 #
 
-### Download and Install Python
+### Download and Install Python :snake:
 To run the application, you need install Python 3 (case you don’t installed).
 
     Download in: [Python 3](https://www.python.org/downloads/)
@@ -139,7 +139,7 @@ then enter **pip --version** to verify if pip was installed
 
 ![Intall Python](./images/18.png)
 
-### Installing the Robot Framework
+### Installing the Robot Framework :robot:
    In cmd enter: **pip install robotframework**
 
 ![Intall Robot](./images/19.png)
@@ -149,7 +149,7 @@ To confirm the install, open the cmd and enter **robot --version**
 ![Intall Robot](./images/20.png)
 #
 
-### Installing Selenium Libraries
+### Installing Selenium Libraries :books:
   
   To run our API tests, it is necessary to install the libraries:
   
@@ -165,16 +165,16 @@ To confirm the install, open the cmd and enter **robot --version**
 
 ![Install Library](./images/22.png)
 
-### Running Tests
+### Running Tests :Heavy check mark:
 
    To run or API tests, in cmd's project enter: **robot -d ./log path of test file**
         Where:
 
-- **-d** outputdir dir (Where to create output files. The default is the directory where tests are run from and the given path is considered relative to that unless it is absolute.) 
-- **./logs** Create the folder where will be save the reports
-- **path of test file** path containing the folder and the file that will be test 
+- **-d** *outputdir dir (Where to create output files. The default is the directory where tests are run from and the given path is considered relative to that unless it is absolute.)* 
+- **./logs** *Create the folder where will be save the reports*
+- **path of test file** *path containing the folder and the file that will be test* 
 
-                For example: **robot -d ./log test\user\register.robot**
+                For example: robot -d ./log test\user\register.robot
 
 
 ![Running Test](./images/23.png)
