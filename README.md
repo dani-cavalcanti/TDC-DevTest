@@ -8,7 +8,7 @@ Project to demonstration of test cases API using Robot Framework that were shown
 <p align="justify">This application has to objective to teach about API Test Automation using the Robot Framework during a Masterclass at Sensedia Academy. Using Node.js and Mongo DB, were development a two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.</p>
 #
 
-### Download MongoDB Community Server
+### Download MongoDB Community Server :memo:
 To run the application, you need install Mongo DB (case you don’t installed).
 
    Download in: [MongoDB Community Server](https://www.mongodb.com/try/download/community) 
@@ -24,7 +24,7 @@ With Mongo installed, open your terminal and type **mongod** to run your Mongo s
 ![prompt comand MongoDB](./images/2.png)
 #
 
-### Node
+### Node :knot:
    Download in: [Node js](https://nodejs.org/en/download/)
 
 **1 - Download Windows Installer**
@@ -165,9 +165,10 @@ To confirm the install, open the cmd and enter **robot --version**
 
 ![Install Library](./images/22.png)
 
-### Running Tests :Heavy check mark:
+### Running Tests :heavy_check_mark:
 
    To run or API tests, in cmd's project enter: **robot -d ./log path of test file**
+        
         Where:
 
 - **-d** *outputdir dir (Where to create output files. The default is the directory where tests are run from and the given path is considered relative to that unless it is absolute.)* 
