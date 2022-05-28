@@ -1,0 +1,453 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Rocket🚀QA API",
+        "description": "Collection from Application for API automation tests with Robot Framework",
+        "contact": {
+            "email": "danielle.coelho@sensedia.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:1302",
+            "description": "API Test"
+        }
+    ],
+    "paths": {
+        "/auth/register": {
+            "post": {
+                "summary": "Register a User",
+                "description": "Request to register a new User",
+                "tags": [
+                    "Auth"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/User"
+                            },
+                            "examples": {
+                                "user": {
+                                    "value":{
+                                        "name": "Theo'Doro",
+                                        "cpf": "533.963.080-34",
+                                        "email": "theocat@rocketqa.com",
+                                        "password": "09%jan"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "User Created",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Registration failed"
+                    }
+                }
+            }
+        },
+        "/auth/authenticate":{
+            "post": {
+                "summary": "Authenticate",
+                "description": "Request to authenticate a user",
+                "tags": [
+                    "Auth"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Auth"
+                            },
+                            "examples": {
+                                "user": {
+                                    "value":{
+                                        "email": "malena@rocketqa.com",
+                                        "password": "12$abr"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "User Listeds",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid password"
+                    },
+                    "404":{
+                        "description": "User not found"
+                    }
+                }
+            }
+        },
+        "/auth/users":{
+            "get":{
+                "summary": "User List",
+                "description": "Request to list all users registered",
+                "tags": ["Auth"],
+                "responses": {
+                    "200": {
+                        "description": "Users List",
+                        "content": {
+                            "application/json":{
+                                "schema": {
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error loading users"
+                    }
+                }
+            }
+        },
+        "/auth/users/{cpf}": {
+            "get": {
+                "summary": "User Show",
+                "description": "Request to show only a user registered",
+                "tags": ["Auth"],
+                "parameters": [
+                    {
+                        "name": "cpf",
+                        "in": "path",
+                        "description": "User CPF",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200":{
+                        "description": "User showed",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error loading user"
+                    }
+                }
+            },
+            "delete":{
+                "summary": "Delete User",
+                "description": "Request to delete only a user registered",
+                "tags": ["Auth"],
+                "parameters": [
+                    {
+                        "name": "cpf",
+                        "in": "path",
+                        "description": "User CPF",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                         }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "User removed successful"
+                    },
+                    "400": {
+                        "description": "Error removing user"
+                    }
+                }
+            }
+        },
+        "/projects":{
+            "post": {
+                "summary": "Create a new Project",
+                "description": "Request to create a new Project",
+                "tags": ["Projects"],
+                "security": [{"bearerAuth":[]}],
+                "requestBody":{
+                    "content": {
+                        "application/json":{
+                            "schema":{
+                                "$ref": "#/components/schemas/Project"
+                            },
+                            "examples": {
+                                "project":{
+                                    "value":{
+                                        "code": 2,
+                                        "title": "Forest Of Illusion",
+                                        "description": "A gigantic forest that deceives passersby with tree illusions. Its boss is Roy Koopa.",
+                                        "tasks": [
+                                            {
+                                                "title": "Thwomp",
+                                                "description": "a stone creature that guards castles and strongholds crushing anyone nearby.",
+                                                "assignedTo": "6283d825b200931057853550"
+                                            },
+                                            {
+                                                "title": "Monty Mole",
+                                                "description": "may suddenly appear from the ground. Its subspecies is large (Mega Mole).",
+                                                "assignedTo": "6283d825b200931057853550"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201":{
+                        "description": "Project created successful",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/Project"
+                                }
+                            }
+                        }
+                    },
+                    "400":{
+                        "description": "Error creating new project"
+                    }
+                }
+            },
+            "get":{
+                "summary": "List Projects",
+                "description": "Request to list all projects createds",
+                "tags": ["Projects"],
+                "security": [{"bearerAuth":[]}],
+                "responses": {
+                    "200":{
+                        "description": "Projects List",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/Project"
+                                }
+                            }
+                        }
+                    },
+                    "400":{
+                        "description": "Error loading projects"
+                    }
+                }
+            }
+        },
+        "/projects/{code}":{
+            "get":{
+                "summary": "Show Project",
+                "description": "Request to show only a project created",
+                "tags": ["Projects"],
+                "security": [{"bearerAuth":[]}],
+                "parameters": [
+                    {
+                        "name": "code",
+                        "in": "path",
+                        "description": "Project Code",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200":{
+                        "description": "Project Showed",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/Project"
+                                }
+                            }
+                        }
+                    },
+                    "400":{
+                        "description": "Error loading project"
+                    }
+                }
+            },
+            "put":{
+                "summary": "Update Project",
+                "description": "Request to update a project created",
+                "tags": ["Projects"],
+                "parameters": [
+                    {
+                        "name": "code",
+                        "in": "path",
+                        "description": "Project Code",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                         }
+                    }
+                ],
+                "security": [{"bearerAuth":[]}],
+                "requestBody":{
+                    "content": {
+                        "application/json":{
+                            "schema":{
+                                "$ref": "#/components/schemas/Project"
+                            },
+                            "examples": {
+                                "project":{
+                                    "value":{
+                                        "code": 2,
+                                        "title": "Forest Of Illusion",
+                                        "description": "A gigantic forest that deceives passersby with tree illusions. Its boss is Roy Koopa.",
+                                        "tasks": [
+                                            {
+                                                "title": "Thwomp",
+                                                "description": "a stone creature that guards castles and strongholds crushing anyone nearby.",
+                                                "assignedTo": "6283d825b200931057853550"
+                                            },
+                                            {
+                                                "title": "Monty Mole",
+                                                "description": "may suddenly appear from the ground. Its subspecies is large (Mega Mole).",
+                                                "assignedTo": "6283d825b200931057853550"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200":{
+                        "description": "Project updated successful",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "object",
+                                    "$ref": "#/components/schemas/Project"
+                                }
+                            }
+                        }
+                    },
+                    "400":{
+                        "description": "Error updating project"
+                    }
+                }
+            },
+            "delete":{
+                "summary": "Remove Project",
+                "description": "Request to remove a project created",
+                "tags": ["Projects"],
+                "parameters": [
+                    {
+                        "name": "code",
+                        "in": "path",
+                        "description": "Project Code",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                      }
+                    }
+                ],
+                "security": [{"bearerAuth":[]}],
+                "responses": {
+                    "204":{
+                        "description": "Project removed successful"
+                    },
+                    "400":{
+                        "description": "Error removing project"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "User": {
+                "type": "object",
+                "properties": {
+                    "name":{
+                        "type": "string"
+                    },
+                    "cpf": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "password": {
+                        "type": "string"
+                    },
+                    "token":{
+                        "type": "string"
+                    }
+                }
+            },
+            "Auth": {
+                "type": "object",
+                "properties":{
+                    "email": {
+                        "type": "string"
+                    },
+                    "password": {
+                        "type": "string"
+                    },
+                    "token":{
+                        "type": "string"
+                    }
+                }
+            },
+            "Project":{
+                "type":"object",
+                "properties": {
+                    "code":{
+                        "type": "number"
+                    },
+                    "title":{
+                        "type": "string"
+                    },
+                    "description":{
+                        "type": "string"
+                    },
+                    "user":{
+                        "type": "object"
+                    },
+                    "tasks":{
+                        "type": "object"
+                    }
+                }
+            }
+        },
+        "securitySchemes": {
+            "bearerAuth":{
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    }
+}
