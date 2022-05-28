@@ -115,36 +115,36 @@ To run the application, you need install Python 3 (case you don’t installed).
 
     Download in: https://www.python.org/downloads/
 
-![Intall Python](./images/1.png)
+![Intall Python](./images/12.png)
 
 On the page, choose your OS and download (as in the image)
 
-![Intall Python](./images/2.png)
+![Intall Python](./images/13.png)
 
 Check the option "Add Python 3.10 to PATH" for create the environment variable of Python, click in **Install Now** and then do the standard Windows install: next, next, Close.
 
-![Intall Python](./images/3.png)
+![Intall Python](./images/14.png)
 
-![Intall Python](./images/4.png)
+![Intall Python](./images/15.png)
 
-![Intall Python](./images/5.png)
+![Intall Python](./images/16.png)
 
 To confirm the install, open the cmd and enter **python --version**
 
-![Intall Python](./images/6.png)
+![Intall Python](./images/17.png)
 
 then enter **pip --version** to verify if pip was installed
 
-![Intall Python](./images/7.png)
+![Intall Python](./images/18.png)
 
 ## Installing the Robot Framework
    In cmd enter: **pip install robotframework**
 
-![Intall Robot](./images/8.png)
+![Intall Robot](./images/19.png)
 
 To confirm the install, open the cmd and enter **robot --version**
 
-![Intall Robot](./images/9.png)
+![Intall Robot](./images/20.png)
 #
 
 ## Installing Selenium Libraries
@@ -155,11 +155,11 @@ To confirm the install, open the cmd and enter **robot --version**
    
    In cmd enter: **pip install robotframework-seleniumlibrary**
 
-![Install Library](./images/10.png)
+![Install Library](./images/21.png)
 
 * **Requests Library**
    
    In cmd enter: **pip install robotframework-requests**
 
-![Install Library](./images/11.png)
+![Install Library](./images/22.png)
 #
