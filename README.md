@@ -1,11 +1,11 @@
-<h1 align="center">  {c:violet}TDC-DevTest{/c} </h1>
+<h1 align="center">TDC-DevTest</h1>
 
 Project to demonstration of test cases API using Robot Framework that were shown at TDC Innovation 2022
 #
 
-## App Develop
+## :computer: App Develop
 
-This application has to objective to teach about API Test Automation using the Robot Framework during a Masterclass at Sensedia Academy. Using Node.js and Mongo DB, were development a two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
+<p align="justify">This application has to objective to teach about API Test Automation using the Robot Framework during a Masterclass at Sensedia Academy. Using Node.js and Mongo DB, were development a two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.</p>
 #
 
 ### Download MongoDB Community Server
@@ -107,7 +107,7 @@ And in browser:
 ![Swagger API](./images/11.png)
 #
 
-## Robot Project - Test API whit Robot Framework 
+## :mortar_board: Robot Project - Test API whit Robot Framework 
 
 This project has to objective to teach about API Test Automation using the Robot Framework. We'll testing two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
 #
