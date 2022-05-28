@@ -1,4 +1,4 @@
-# ![Project](https://pasteboard.co/kDscEbIxA0ag.png) TDC-DevTest
+# TDC-DevTest
 Project to demonstration of test cases API using Robot Framework that were shown at TDC Innovation 2022
 
 # Project API
