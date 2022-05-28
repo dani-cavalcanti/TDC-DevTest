@@ -169,7 +169,7 @@ To confirm the install, open the cmd and enter **robot --version**
 
    To run or API tests, in cmd's project enter: **robot -d ./log path of test file**
         Where:
-<<<<<<< HEAD
+
 - **-d** outputdir dir (Where to create output files. The default is the directory where tests are run from and the given path is considered relative to that unless it is absolute.) 
 - **./logs** Create the folder where will be save the reports
 - **path of test file** path containing the folder and the file that will be test 
