@@ -96,7 +96,7 @@ With our database and Node installed and configured, now let's install the neces
 
 * **To access API documentation:**
 
-     !!![Swagger](http://localhost:1302/api-docs/)
+     [Swagger](http://localhost:1302/api-docs/)
 
 This is the image you should see in your IDE's terminal:
 
