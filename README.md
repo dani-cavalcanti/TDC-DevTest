@@ -24,7 +24,7 @@ With Mongo installed, open your terminal and type **mongod** to run your Mongo s
 ![prompt comand MongoDB](./images/2.png)
 #
 
-### Node :knot:
+### Node :notebook_with_decorative_cover:
    Download in: [Node js](https://nodejs.org/en/download/)
 
 **1 - Download Windows Installer**
