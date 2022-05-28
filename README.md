@@ -3,7 +3,7 @@
 Project to demonstration of test cases API using Robot Framework that were shown at TDC Innovation 2022
 #
 
- [fa=file-code /] ## App Develop
+## App Develop
 
 This application has to objective to teach about API Test Automation using the Robot Framework during a Masterclass at Sensedia Academy. Using Node.js and Mongo DB, were development a two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
 #
