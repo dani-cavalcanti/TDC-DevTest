@@ -1,20 +1,17 @@
-<h1 align="center"> 
-        <font color="#000099">
-        TDC-DevTest 
-        </font>
-</h1>
+<h1 align="center">  TDC-DevTest </h1>
 
 Project to demonstration of test cases API using Robot Framework that were shown at TDC Innovation 2022
+#
 
-# App Develop
+## App Develop
 
 This application has to objective to teach about API Test Automation using the Robot Framework during a Masterclass at Sensedia Academy. Using Node.js and Mongo DB, were development a two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
 #
 
-## Download MongoDB Community Server
+### Download MongoDB Community Server
 To run the application, you need install Mongo DB (case you don’t installed).
 
-         Download in: [MongoDB Community Server](https://www.mongodb.com/try/download/community) 
+   Download in: [MongoDB Community Server](https://www.mongodb.com/try/download/community) 
 
 On the page, choose your OS and download (as in the image)
 
@@ -27,8 +24,8 @@ With Mongo installed, open your terminal and type **mongod** to run your Mongo s
 ![prompt comand MongoDB](./images/2.png)
 #
 
-## Node
-        Download in: [Node js](https://nodejs.org/en/download/)
+### Node
+   Download in: [Node js](https://nodejs.org/en/download/)
 
 **1 - Download Windows Installer**
 
@@ -99,7 +96,7 @@ With our database and Node installed and configured, now let's install the neces
 
 * **To access API documentation:**
 
-        [Local Server](http://localhost:1302/api-docs/)
+     [Swagger](http://localhost:1302/api-docs/)
 
 This is the image you should see in your IDE's terminal:
 
@@ -110,12 +107,12 @@ And in browser:
 ![Swagger API](./images/11.png)
 #
 
-# Robot Project - Test API whit Robot Framework 
+## Robot Project - Test API whit Robot Framework 
 
 This project has to objective to teach about API Test Automation using the Robot Framework. We'll testing two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
 #
 
-## Download and Install Python
+### Download and Install Python
 To run the application, you need install Python 3 (case you don’t installed).
 
     Download in: [Python 3](https://www.python.org/downloads/)
@@ -142,7 +139,7 @@ then enter **pip --version** to verify if pip was installed
 
 ![Intall Python](./images/18.png)
 
-## Installing the Robot Framework
+### Installing the Robot Framework
    In cmd enter: **pip install robotframework**
 
 ![Intall Robot](./images/19.png)
@@ -152,7 +149,7 @@ To confirm the install, open the cmd and enter **robot --version**
 ![Intall Robot](./images/20.png)
 #
 
-## Installing Selenium Libraries
+### Installing Selenium Libraries
   
   To run our API tests, it is necessary to install the libraries:
   
