@@ -1,4 +1,4 @@
-# TDC-DevTest
+# ![Project](https://pasteboard.co/kDscEbIxA0ag.png) TDC-DevTest
 Project to demonstration of test cases API using Robot Framework that were shown at TDC Innovation 2022
 
 # Project API
@@ -9,7 +9,7 @@ This application has to objective to teach about API Test Automation using the R
 ## Download MongoDB Community Server
 To run the application, you need install Mongo DB (case you don’t installed).
 
-         Download in: https://www.mongodb.com/try/download/community 
+         Download in: [MongoDB Community Server](https://www.mongodb.com/try/download/community) 
 
 On the page, choose your OS and download (as in the image)
 
@@ -23,7 +23,7 @@ With Mongo installed, open your terminal and type **mongod** to run your Mongo s
 #
 
 ## Node
-        Download in: https://nodejs.org/en/download/
+        Download in: [Node js](https://nodejs.org/en/download/)
 
 **1 - Download Windows Installer**
 
@@ -94,7 +94,7 @@ With our database and Node installed and configured, now let's install the neces
 
 * **To access API documentation:**
 
-        http://localhost:1302/api-docs/
+        [Local Server](http://localhost:1302/api-docs/)
 
 This is the image you should see in your IDE's terminal:
 
@@ -113,7 +113,7 @@ This project has to objective to teach about API Test Automation using the Robot
 ## Download and Install Python
 To run the application, you need install Python 3 (case you don’t installed).
 
-    Download in: https://www.python.org/downloads/
+    Download in: [Python 3](https://www.python.org/downloads/)
 
 ![Intall Python](./images/12.png)
 

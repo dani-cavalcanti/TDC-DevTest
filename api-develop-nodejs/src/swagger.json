@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Rocket🚀QA API",
+        "title": "Project API",
         "description": "Collection from Application for API automation tests with Robot Framework",
         "contact": {
             "email": "danielle.coelho@sensedia.com"
