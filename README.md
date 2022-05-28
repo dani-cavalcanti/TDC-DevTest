@@ -1,4 +1,4 @@
-<h1 align="center">  TDC-DevTest </h1>
+<h1 align="center">  {c:violet}TDC-DevTest{/c} </h1>
 
 Project to demonstration of test cases API using Robot Framework that were shown at TDC Innovation 2022
 #
