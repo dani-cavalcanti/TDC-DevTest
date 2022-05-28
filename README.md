@@ -83,7 +83,7 @@ If the Node.js version and npm are correctly installed, you’ll see the version
 ***For Mac and Linux installation visit:* https://kinsta.com/blog/how-to-install-node-js/**
 #
 
-## Running Application
+### Running Application
 With our database and Node installed and configured, now let's install the necessary packages and run the application. In your IDE's terminal, run the script below:
 
 * **To install project dependencies:**
@@ -164,4 +164,16 @@ To confirm the install, open the cmd and enter **robot --version**
    In cmd enter: **pip install robotframework-requests**
 
 ![Install Library](./images/22.png)
+
+### Running Tests
+
+To run or API tests, in cmd's project enter: **robot -d ./log path of test file**
+        Where:
+        - **-d** outputdir dir (Where to create output files. The default is the directory where tests are run from and the given path is considered relative to that unless it is absolute.) 
+        - **./logs** Create the folder where will be save the reports
+        - **path of test file** path containing the folder and the file that will be test 
+
+For example: **robot -d ./log test\user\register.robot**
+
+![Running Test](./images/23.png)
 #
