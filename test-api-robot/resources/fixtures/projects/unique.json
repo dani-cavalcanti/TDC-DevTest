@@ -1,0 +1,17 @@
+{
+    "code": "3",
+    "title": "Chocolate Island",
+    "description": "A mountainous island with brown terrain hence the name Chocolate. Nearby there is also a sunken ship. Her boss is Wendy O. Koopa.",
+    "tasks":[
+        {
+            "title": "Monty Mole",
+            "description": "may suddenly appear from the ground. Its subspecies is large (Mega Mole).",
+            "assignedTo": "628bc1739cd55787d224362b"
+        },
+            {
+            "title": "Sumo Bro",
+            "description": "when he stomps his foot, he creates a lightning bolt, causing a sea of ​​flames to appear.",
+            "assignedTo": "628bc1739cd55787d224362b"
+        }
+    ]
+}

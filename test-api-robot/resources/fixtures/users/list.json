@@ -1,0 +1,28 @@
+{
+	"users": [
+		{
+			"name": "Clementina Jove",
+			"cpf": "143.168.090-75",
+			"email": "clement@rocketqa.com",
+			"password": "09%mar"
+		},
+		{
+			"name": "Lucca Miguel",
+			"cpf": "594.435.270-14",
+			"email": "luguel@rocketqa.com",
+			"password": "09*jan"
+		},
+		{
+			"name": "Zulu Henrique",
+			"cpf": "616.414.470-10",
+			"email": "zulu3@rocketqa.com",
+			"password": "09$jun"
+		},
+		{
+			"name": "Meg Louise",
+			"cpf": "231.494.030-06",
+			"email": "meglou@equiperocket.com",
+			"password": "01%6#14"
+		}
+	]
+}

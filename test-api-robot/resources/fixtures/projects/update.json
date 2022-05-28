@@ -1,0 +1,12 @@
+{
+    "code": "3",
+    "title": "Chocolate Island",
+    "description": "A mountainous island with brown terrain hence the name Chocolate. Nearby there is also a sunken ship. Her boss is Wendy O. Koopa.",
+    "tasks":[
+            {
+            "title": "Podoboo",
+            "description": "Fireballs that jump from the bottom up and then fall, doing this countless times.",
+            "assignedTo": "628bc18a9cd55787d224362e"
+        }
+    ]
+}
