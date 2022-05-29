@@ -115,7 +115,7 @@ This project has to objective to teach about API Test Automation using the Robot
 ### Download and Install Python :snake:
 To run the application, you need install Python 3 (case you don’t installed).
 
-    Download in: [Python 3](https://www.python.org/downloads/)
+   Download in: [Python 3](https://www.python.org/downloads/)
 
 ![Intall Python](./images/12.png)
 
