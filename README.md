@@ -1,6 +1,4 @@
-<h1 align="center">
-<span style="color:#48D1CC">TDC Innovation</span>
-<h1/>
+<h1 align="center">TDC Innovation<h1/>
 
 Project to demonstration of test cases API using Robot Framework that were shown at TDC Innovation 2022
 
