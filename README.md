@@ -6,7 +6,7 @@ Project to demonstration of test cases API using Robot Framework that were shown
 ## :computer: App Develop
 
 <p align="justify">This application has to objective to teach about API Test Automation using the Robot Framework during a Masterclass at Sensedia Academy. Using Node.js and Mongo DB, were development a two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.</p>
-#
+
 
 ### Download MongoDB Community Server :memo:
 To run the application, you need install Mongo DB (case you don’t installed).
@@ -22,9 +22,9 @@ and then do the standard Windows install: next, next, finish.
 With Mongo installed, open your terminal and type **mongod** to run your Mongo server.
 
 ![prompt comand MongoDB](./images/2.png)
-#
 
-### Node :knot:
+
+### Node :notebook_with_decorative_cover:
    Download in: [Node js](https://nodejs.org/en/download/)
 
 **1 - Download Windows Installer**
@@ -81,7 +81,7 @@ And to check the npm version, run this command:
 If the Node.js version and npm are correctly installed, you’ll see the version name in the CMD prompt.
 
 ***For Mac and Linux installation visit:* https://kinsta.com/blog/how-to-install-node-js/**
-#
+
 
 ### Running Application :four_leaf_clover:
 With our database and Node installed and configured, now let's install the necessary packages and run the application. In your IDE's terminal, run the script below:
@@ -105,17 +105,17 @@ This is the image you should see in your IDE's terminal:
 And in browser:
 
 ![Swagger API](./images/11.png)
-#
+
 
 ## :mortar_board: Robot Project - Test API whit Robot Framework 
 
 This project has to objective to teach about API Test Automation using the Robot Framework. We'll testing two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
-#
+
 
 ### Download and Install Python :snake:
 To run the application, you need install Python 3 (case you don’t installed).
 
-    Download in: [Python 3](https://www.python.org/downloads/)
+   Download in: [Python 3](https://www.python.org/downloads/)
 
 ![Intall Python](./images/12.png)
 
@@ -147,7 +147,7 @@ then enter **pip --version** to verify if pip was installed
 To confirm the install, open the cmd and enter **robot --version**
 
 ![Intall Robot](./images/20.png)
-#
+
 
 ### Installing Selenium Libraries :books:
   
@@ -179,4 +179,4 @@ To confirm the install, open the cmd and enter **robot --version**
 
 
 ![Running Test](./images/23.png)
-#
+
