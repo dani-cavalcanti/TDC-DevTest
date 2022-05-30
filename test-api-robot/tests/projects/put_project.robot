@@ -14,9 +14,9 @@ Update a Project
 
     ${projectcode}=             Convert To String        ${resp.json()['project']['code']}
 
-    Set To Dictionary           ${update}              [tasks]        ${payload}
+    Set To Dictionary           ${update}             [tasks]        ${payload} 
 
-    ${resp}=                    Put Project             ${payload}          ${projectcode}
+    ${resp}=                    Put Project             ${update}          ${projectcode}
 
     Status Should Be            200                     ${resp}
 
