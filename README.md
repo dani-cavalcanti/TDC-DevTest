@@ -2,12 +2,18 @@
 
 Project to demonstration of test cases API using Robot Framework that were shown at TDC Innovation 2022
 
+***
+
+<h3>:gear: Languages and Tools</h3>
 <p align="center">
-<img src="https://img.shields.io/badge/Node.js-5F9EA0?style=for-the-badge&logo=node.js&logoColor=white">
+<img src="https://img.shields.io/badge/Node.js-006400?style=for-the-badge&logo=node.js&logoColor=white">
 <img src="https://img.shields.io/badge/MongoDB-32CD32?style=for-the-badge&logo=mongodb&logoColor=white">
-<img src="https://img.shields.io/badge/Swagger-E0FFFF?style=for-the-badge&logo=swagger.js&logoColor=white">
+<img src="https://img.shields.io/badge/Swagger-FF4500?style=for-the-badge&logo=swagger.js&logoColor=white">
 <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/RobotFramework-40E0D0?style=for-the-badge&logo=robotframework&logoColor=white">
+<img src="https://img.shields.io/badge/Robot%20Framework-3CB371?style=for-the-badge&logo=robotframework&logoColor=white">
+<img src="https://img.shields.io/badge/VS%20Code-1E90FF?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+<img src="https://img.shields.io/badge/Chrome-2F4F4F?style=for-the-badge&logo=googlechrome&logoColor=white">
+
  </p>
 
 #
