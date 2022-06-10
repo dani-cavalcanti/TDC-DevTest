@@ -10,6 +10,9 @@ ${base_url_api}      http://localhost:1302
 
 ***Keywords***
 ## Helpers
+Conectar API
+    Create Session          rocketqa-api        ${base_url_api}
+
 Get Session Token
       ${resp}=      Post Authenticate           malena@rocketqa.com        12$abr
 
@@ -22,53 +25,57 @@ Get Session Token
 Post Register
     [Arguments]     ${payload}
 
-    Create Session          rocketqa-api        ${base_url_api}
+    Conectar API
    
     &{headers}=             Create Dictionary       Content-type=application/json 
     
-    ${resp}=                POST On Session     rocketqa-api        /auth/register       json=${payload}         headers=${headers}
+    ${resp}=                POST On Session     rocketqa-api        /auth/register       
+    ...                     json=${payload}         headers=${headers}
 
     [Return]       ${resp}  
+
 
 ## POST /authenticate
 Post Authenticate
     [Arguments]     ${email}        ${password}
 
-    Create Session          rocketqa-api        ${base_url_api}
+    Conectar API
 
     &{headers}=             Create Dictionary       Content-type=application/json
     &{payload}=             Create Dictionary       email=${email}      password=${password}    
 
-    ${resp}=            POST On Session         rocketqa-api        /auth/authenticate      json=${payload}         headers=${headers}
+    ${resp}=            POST On Session         rocketqa-api        /auth/authenticate      
+    ...                 json=${payload}         headers=${headers}
 
     [Return]        ${resp}
 
 
 ##GET/ user
 Get Users
-    Create Session          rocketqa-api            ${base_url_api}   
+    Conectar API  
 
     &{headers}=             Create Dictionary       Content-type=application/json
 
     ${resp}=                GET On Session          rocketqa-api        /auth/users         headers=${headers}
 
+    [Return]        ${resp}
 
 Get User CPF
     [Arguments]             ${cpf}
 
-    Create Session          rocketqa-api            ${base_url_api}
+    Conectar API
 
     &{headers}=             Create Dictionary       Content-type=application/json
 
     ${resp}=                GET On Session          rocketqa-api        /auth/users/${cpf}         headers=${headers}
 
-
+    [Return]        ${resp}
 
 ##DELETE /user
 Delete User
     [Arguments]     ${cpf}
 
-    Create Session         rocketqa-api        ${base_url_api}
+    Conectar API
 
     &{headers}=            Create Dictionary       Content-Type=application/json       
 
@@ -82,7 +89,7 @@ Delete User
 Post Create Project
     [Arguments]     ${payload}
 
-    Create Session          rocketqa-api        ${base_url_api}
+    Conectar API
 
     ${token}=               Get Session Token
     &{headers}=             Create Dictionary       Content-type=application/json       Authorization=${token}
@@ -93,7 +100,7 @@ Post Create Project
 
 ## GET /projects
 Get Projects
-    Create Session          rocketqa-api        ${base_url_api}
+    Conectar API
 
     ${token}=               Get Session Token
     &{headers}=             Create Dictionary       Content-type=application/json       Authorization=${token}
@@ -105,7 +112,7 @@ Get Projects
 Get Unique Project
     [Arguments]     ${code}
 
-    Create Session          rocketqa-api        ${base_url_api}
+    Conectar API
 
     ${token}=               Get Session Token
     &{headers}=             Create Dictionary       Content-type=application/json       Authorization=${token}
@@ -117,7 +124,7 @@ Get Unique Project
 Put Project
     [Arguments]         ${payload}          ${code}
 
-    Create Session          rocketqa-api        ${base_url_api}
+    Conectar API
 
     ${token}=               Get Session Token
     &{headers}=             Create Dictionary       Content-type=application/json       Authorization=${token}     

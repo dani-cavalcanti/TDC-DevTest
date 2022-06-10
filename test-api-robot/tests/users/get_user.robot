@@ -15,3 +15,17 @@ Get Users List
 
     ${resp}=                Get Users     
     Status Should Be        200             ${resp}
+
+Get Show User 
+    
+    ${origin}=          Get Json    users/unique.json
+    
+    Delete User         ${origin['cpf']}
+    ${resp}=            Post Register                    ${origin}
+    ${user_cpf}=        Set Variable                     ${resp.json()['user']['cpf']}
+
+
+    ${resp}=            Get User CPF        ${user_cpf}
+    
+    Status Should Be        200                                    ${resp}
+   
